@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('Todos', 'TodosController@index');
 
 Route::get('Todos/{todo}', 'TodosController@show');
+
+Route::get('new_todos', 'TodosController@create');
+
+Route::post('create_todo', 'TodosController@store');
+
